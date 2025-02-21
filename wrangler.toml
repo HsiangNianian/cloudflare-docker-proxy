@@ -6,13 +6,9 @@ ip = "0.0.0.0"
 port = 8787
 local_protocol = "http"
 
-[env.vars]
-CUSTOM_DOMAIN = "hydroroll.team"
-
 [env.dev.vars]
 MODE = "debug"
 TARGET_UPSTREAM = "https://registry-1.docker.io"
-CUSTOM_DOMAIN = "hydroroll.team"
 
 [env.production]
 name = "cloudflare-docker-proxy"
